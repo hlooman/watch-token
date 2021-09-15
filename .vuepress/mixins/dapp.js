@@ -89,7 +89,7 @@ export default {
             id: 333888,
             name: 'Sparta Testnet',
           },
-          sparta: {
+          olympus: {
             tokenType: 'OLY20',
             web3Provider: 'https://rpc.polis.tech/',
             explorerLink: 'https://explorer.polis.tech',
