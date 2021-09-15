@@ -21,6 +21,8 @@ export default {
           5: 'goerli',
           56: 'bsc_mainnet',
           97: 'bsc_testnet',
+          333888: 'sparta',
+          333999: 'olympus',
         },
         list: {
           mainnet: {
@@ -78,6 +80,22 @@ export default {
             explorerName: 'BscScan',
             id: 97,
             name: 'Binance Smart Chain - Testnet',
+          },
+          sparta: {
+            tokenType: 'OLY20',
+            web3Provider: 'https://sparta-rpc.polis.tech/',
+            explorerLink: 'https://sparta-explorer.polis.tech',
+            explorerName: 'Sparta-Explorer',
+            id: 333888,
+            name: 'Sparta Testnet',
+          },
+          sparta: {
+            tokenType: 'OLY20',
+            web3Provider: 'https://rpc.polis.tech/',
+            explorerLink: 'https://explorer.polis.tech',
+            explorerName: 'Olympus-Explorer',
+            id: 333999,
+            name: 'Olympus',
           },
         },
       },
