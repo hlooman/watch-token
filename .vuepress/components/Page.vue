@@ -135,7 +135,11 @@
             alert('It seems that it is not a valid Token or you are on the wrong network');
             this.loaded = false;
           } else {
-            this.token.explorerLink = `${this.network.current.explorerLink}/token/${this.token.address}`;
+            if (this.network.current.id >= 333888) {
+              this.token.explorerLink = `${this.network.current.explorerLink}/tokens/${this.token.address}`;
+            } else {
+              this.token.explorerLink = `${this.network.current.explorerLink}/token/${this.token.address}`;
+            }
 
             this.loaded = true;
 
@@ -154,7 +158,7 @@
         } else {
           if (this.metamask.netId !== this.network.current.id) {
             alert(
-              `Your MetaMask in on the wrong network. Please switch on ${this.network.current.name} and try again!`,
+              `Your MetaMask in on the wrong network. Please switch on ${this.network.current.name} (${this.metamask.netId} <> ${this.network.current.id}) and try again!`,
             );
             return;
           }
